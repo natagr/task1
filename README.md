@@ -4,6 +4,7 @@
 (main - Course, secondary - Instructor)
 Each course has one instructor, but one instructor can teach several different courses.
 
+
 ## Components:
 
 ### UserInterface
@@ -48,7 +49,8 @@ Each course has one instructor, but one instructor can teach several different c
   - Parses files, converts statistics for reporting.
   - Generates XML report.
 
-## Input and Output Examples
+
+## Input and Output Examples:
 
 ### Input file
 
@@ -103,6 +105,7 @@ Each course has one instructor, but one instructor can teach several different c
   </item>
 </statistics>
 ```
+
 
 ## Results of experiments with the number of threads:
 
