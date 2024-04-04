@@ -79,7 +79,9 @@ This document provides an overview of the Course Management System, detailing it
 ]
 ```
 
-Output file:
+### Output file:
+
+```
 <statistics>
   <item>
     <value>Department of Electronics</value>
@@ -98,10 +100,11 @@ Output file:
     <count>1</count>
   </item>
 </statistics>
+```
 
-Results of experiments with the number of threads:
+## Results of experiments with the number of threads:
 
-4 files:
+# 4 files:
 
 Threads: 1 Time: 65 ms
 Threads: 2 Time: 3 ms
@@ -119,7 +122,7 @@ Threads: 4 Time: 1 ms
 Threads: 8 Time: 2 ms
 
 
-16 files:
+# 16 files:
 
 Threads: 1 Time: 129 ms
 Threads: 2 Time: 6 ms
@@ -137,7 +140,7 @@ Threads: 4 Time: 3 ms
 Threads: 8 Time: 4 ms
 
 
-Summary:
+## Summary:
 The experimental results show that the optimal number of threads for file processing in this project corresponds to the number of processor cores, which in this case is 4. 
 The results of experiments with processing 4 files show a significant improvement in execution time with an increase in the number of threads to 4. However, when moving from 4 to 8 threads, no further significant time reduction is observed, due to limitations on the number of processor cores and the fact that half of the threads do not contribute significantly to the overall processing performance, but at the same time create an additional load on the system due to the overhead of their creation and management.
 When analyzing the results of processing 16 files, we observe a similar trend: increasing the number of threads to 4 leads to a significant reduction in processing time. This confirms the effectiveness of using the number of threads that corresponds to the number of processor cores on the device. However, when we further increase the number of threads to 8, the processing time either remains stable or even increases, which may indicate additional overhead for managing more threads than the number of processor cores.
