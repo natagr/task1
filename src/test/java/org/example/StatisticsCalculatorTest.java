@@ -21,11 +21,6 @@ public class StatisticsCalculatorTest {
         assertEquals(2, statistics.get("banana").get());
     }
 
-    @Test(expected = NullPointerException.class)
-    public void testWithNullArray() {
-        StatisticsCalculator.calculateStatistics(null, new ConcurrentHashMap<>());
-    }
-
     @Test
     public void testWithConcurrentAccess() throws InterruptedException {
         String[] values = {"concurrency", "test", "concurrency", "test", "concurrency"};

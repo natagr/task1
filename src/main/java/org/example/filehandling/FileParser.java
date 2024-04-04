@@ -15,6 +15,7 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicInteger;
+import java.util.stream.Stream;
 
 import static org.example.util.StatisticsCalculator.calculateStatistics;
 
@@ -39,9 +40,8 @@ public class FileParser {
         AtomicInteger processedRecords = new AtomicInteger(0);
         AtomicInteger ignoredRecords = new AtomicInteger(0);
 
-        try {
-            Files.walk(directoryPath)
-                    .filter(Files::isRegularFile)
+        try (Stream<Path> paths = Files.walk(directoryPath)) {
+            paths.filter(Files::isRegularFile)
                     .filter(path -> path.toString().endsWith(".json"))
                     .forEach(path -> executorService.submit(() -> processFile(path, attribute, statistics, processedRecords, ignoredRecords)));
         } finally {

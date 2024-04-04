@@ -4,7 +4,6 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -12,6 +11,7 @@ import java.nio.file.Paths;
 import java.util.Comparator;
 import java.util.Map;
 import java.util.concurrent.atomic.AtomicInteger;
+import java.util.stream.Stream;
 
 import static org.example.filehandling.FileParser.parseDirectory;
 import static org.junit.Assert.assertEquals;
@@ -38,10 +38,15 @@ public class FileParserTest {
     }
 
     private void cleanUpTestDirectory(Path tempDir) throws IOException {
-        Files.walk(tempDir)
-                .sorted(Comparator.reverseOrder())
-                .map(Path::toFile)
-                .forEach(File::delete);
+        try (Stream<Path> paths = Files.walk(tempDir)) {
+            paths.sorted(Comparator.reverseOrder())
+                    .map(Path::toFile)
+                    .forEach(file -> {
+                        if (!file.delete()) {
+                            System.err.println("Failed to delete " + file);
+                        }
+                    });
+        }
     }
 
     @Test
