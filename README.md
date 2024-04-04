@@ -52,7 +52,7 @@ Each course has one instructor, but one instructor can teach several different c
 
 ## Input and Output Examples:
 
-### Input file
+### Input file:
 
 ```
 [
