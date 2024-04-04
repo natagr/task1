@@ -1,0 +1,122 @@
+[
+  {
+    "courseName": "Computer Networks",
+    "courseDescription": "An introductory course to programming concepts.",
+    "courseCode": "DS213",
+    "credits": 6,
+    "department": "Department of Specialization 17, Department of Specialization 14, Department of Specialization 5",
+    "instructor": "Instructor 12"
+  },
+  {
+    "courseName": "Algorithms",
+    "courseDescription": "An introductory course to programming concepts.",
+    "courseCode": "CS107",
+    "credits": 46,
+    "department": "Department of Specialization 20, Department of Specialization 5",
+    "instructor": "Instructor 11"
+  },
+  {
+    "courseName": "Introduction to Programming",
+    "courseDescription": "An introductory course to programming concepts.",
+    "courseCode": "DS207",
+    "credits": 43,
+    "department": "Department of Specialization 1, Department of Specialization 16, Department of Specialization 4",
+    "instructor": "Instructor 16"
+  },
+  {
+    "courseName": "Mobile App Development",
+    "courseDescription": "An introductory course to programming concepts.",
+    "courseCode": "DS215",
+    "credits": 46,
+    "department": "Department of Specialization 7",
+    "instructor": "Instructor 36"
+  },
+  {
+    "courseName": "Quantum Computing",
+    "courseDescription": "An introductory course to programming concepts.",
+    "courseCode": "DS218",
+    "credits": 9,
+    "department": "Department of Specialization 3",
+    "instructor": "Instructor 29"
+  },
+  {
+    "courseName": "Human-Computer Interaction",
+    "courseDescription": "An introductory course to programming concepts.",
+    "courseCode": "CS112",
+    "credits": 37,
+    "department": "Department of Specialization 19, Department of Specialization 2",
+    "instructor": "Instructor 14"
+  },
+  {
+    "courseName": "Web Development",
+    "courseDescription": "An introductory course to programming concepts.",
+    "courseCode": "DS216",
+    "credits": 11,
+    "department": "Department of Specialization 8, Department of Specialization 14, Department of Specialization 20",
+    "instructor": "Instructor 31"
+  },
+  {
+    "courseName": "Software Engineering",
+    "courseDescription": "An introductory course to programming concepts.",
+    "courseCode": "CS110",
+    "credits": 21,
+    "department": "Department of Specialization 12, Department of Specialization 5, Department of Specialization 2",
+    "instructor": "Instructor 29"
+  },
+  {
+    "courseName": "Operating Systems",
+    "courseDescription": "An introductory course to programming concepts.",
+    "courseCode": "CS101",
+    "credits": 24,
+    "department": "Department of Specialization 18, Department of Specialization 1, Department of Specialization 13",
+    "instructor": "Instructor 7"
+  },
+  {
+    "courseName": "Quantum Computing",
+    "courseDescription": "An introductory course to programming concepts.",
+    "courseCode": "CS109",
+    "credits": 35,
+    "department": "Department of Specialization 7, Department of Specialization 19",
+    "instructor": "Instructor 26"
+  },
+  {
+    "courseName": "Advanced Programming",
+    "courseDescription": "An introductory course to programming concepts.",
+    "courseCode": "DS203",
+    "credits": 16,
+    "department": "Department of Specialization 10, Department of Specialization 3",
+    "instructor": "Instructor 1"
+  },
+  {
+    "courseName": "Software Engineering",
+    "courseDescription": "An introductory course to programming concepts.",
+    "courseCode": "CS113",
+    "credits": 9,
+    "department": "Department of Specialization 2, Department of Specialization 8",
+    "instructor": "Instructor 12"
+  },
+  {
+    "courseName": "Database Systems",
+    "courseDescription": "An introductory course to programming concepts.",
+    "courseCode": "DS214",
+    "credits": 16,
+    "department": "Department of Specialization 10, Department of Specialization 15, Department of Specialization 13",
+    "instructor": "Instructor 21"
+  },
+  {
+    "courseName": "Internet of Things",
+    "courseDescription": "An introductory course to programming concepts.",
+    "courseCode": "DS214",
+    "credits": 55,
+    "department": "Department of Specialization 5, Department of Specialization 4",
+    "instructor": "Instructor 36"
+  },
+  {
+    "courseName": "Web Development",
+    "courseDescription": "An introductory course to programming concepts.",
+    "courseCode": "CS103",
+    "credits": 23,
+    "department": "Department of Specialization 7, Department of Specialization 9",
+    "instructor": "Instructor 21"
+  }
+]

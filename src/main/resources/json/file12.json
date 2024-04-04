@@ -1,0 +1,82 @@
+[
+  {
+    "courseName": "Mobile App Development",
+    "courseDescription": "An introductory course to programming concepts.",
+    "courseCode": "DS218",
+    "credits": 44,
+    "department": "Department of Specialization 12",
+    "instructor": "Instructor 19"
+  },
+  {
+    "courseName": "Human-Computer Interaction",
+    "courseDescription": "An introductory course to programming concepts.",
+    "courseCode": "CS113",
+    "credits": 46,
+    "department": "Department of Specialization 4, Department of Specialization 3",
+    "instructor": "Instructor 12"
+  },
+  {
+    "courseName": "Mobile App Development",
+    "courseDescription": "An introductory course to programming concepts.",
+    "courseCode": "CS106",
+    "credits": 57,
+    "department": "Department of Specialization 8",
+    "instructor": "Instructor 34"
+  },
+  {
+    "courseName": "Artificial Intelligence",
+    "courseDescription": "An introductory course to programming concepts.",
+    "courseCode": "CS106",
+    "credits": 1,
+    "department": "Department of Specialization 9, Department of Specialization 5, Department of Specialization 19",
+    "instructor": "Instructor 39"
+  },
+  {
+    "courseName": "Data Science",
+    "courseDescription": "An introductory course to programming concepts.",
+    "courseCode": "CS114",
+    "credits": 12,
+    "department": "Department of Specialization 8, Department of Specialization 11, Department of Specialization 18",
+    "instructor": "Instructor 14"
+  },
+  {
+    "courseName": "Data Science",
+    "courseDescription": "An introductory course to programming concepts.",
+    "courseCode": "CS100",
+    "credits": 42,
+    "department": "Department of Specialization 14, Department of Specialization 11, Department of Specialization 10",
+    "instructor": "Instructor 37"
+  },
+  {
+    "courseName": "Cybersecurity",
+    "courseDescription": "An introductory course to programming concepts.",
+    "courseCode": "CS117",
+    "credits": 54,
+    "department": "Department of Specialization 6, Department of Specialization 20",
+    "instructor": "Instructor 34"
+  },
+  {
+    "courseName": "Computer Networks",
+    "courseDescription": "An introductory course to programming concepts.",
+    "courseCode": "DS219",
+    "credits": 57,
+    "department": "Department of Specialization 11",
+    "instructor": "Instructor 22"
+  },
+  {
+    "courseName": "Data Science",
+    "courseDescription": "An introductory course to programming concepts.",
+    "courseCode": "DS218",
+    "credits": 13,
+    "department": "Department of Specialization 14, Department of Specialization 2",
+    "instructor": "Instructor 29"
+  },
+  {
+    "courseName": "Blockchain Technology",
+    "courseDescription": "An introductory course to programming concepts.",
+    "courseCode": "DS216",
+    "credits": 54,
+    "department": "Department of Specialization 2, Department of Specialization 16, Department of Specialization 1",
+    "instructor": "Instructor 27"
+  }
+]

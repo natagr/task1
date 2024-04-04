@@ -1,0 +1,162 @@
+[
+  {
+    "courseName": "Quantum Computing",
+    "courseDescription": "An introductory course to programming concepts.",
+    "courseCode": "CS115",
+    "credits": 55,
+    "department": "Department of Specialization 8, Department of Specialization 11, Department of Specialization 19",
+    "instructor": "Instructor 15"
+  },
+  {
+    "courseName": "Introduction to Programming",
+    "courseDescription": "An introductory course to programming concepts.",
+    "courseCode": "DS204",
+    "credits": 17,
+    "department": "Department of Specialization 17, Department of Specialization 19, Department of Specialization 14",
+    "instructor": "Instructor 29"
+  },
+  {
+    "courseName": "Introduction to Programming",
+    "courseDescription": "An introductory course to programming concepts.",
+    "courseCode": "DS210",
+    "credits": 32,
+    "department": "Department of Specialization 18, Department of Specialization 6, Department of Specialization 16",
+    "instructor": "Instructor 39"
+  },
+  {
+    "courseName": "Cloud Computing",
+    "courseDescription": "An introductory course to programming concepts.",
+    "courseCode": "CS115",
+    "credits": 17,
+    "department": "Department of Specialization 4, Department of Specialization 16",
+    "instructor": "Instructor 6"
+  },
+  {
+    "courseName": "Data Science",
+    "courseDescription": "An introductory course to programming concepts.",
+    "courseCode": "CS117",
+    "credits": 32,
+    "department": "Department of Specialization 6, Department of Specialization 5, Department of Specialization 9",
+    "instructor": "Instructor 27"
+  },
+  {
+    "courseName": "Blockchain Technology",
+    "courseDescription": "An introductory course to programming concepts.",
+    "courseCode": "CS103",
+    "credits": 41,
+    "department": "Department of Specialization 3, Department of Specialization 9",
+    "instructor": "Instructor 33"
+  },
+  {
+    "courseName": "Internet of Things",
+    "courseDescription": "An introductory course to programming concepts.",
+    "courseCode": "CS111",
+    "credits": 48,
+    "department": "Department of Specialization 16",
+    "instructor": "Instructor 12"
+  },
+  {
+    "courseName": "Artificial Intelligence",
+    "courseDescription": "An introductory course to programming concepts.",
+    "courseCode": "CS117",
+    "credits": 50,
+    "department": "Department of Specialization 1",
+    "instructor": "Instructor 28"
+  },
+  {
+    "courseName": "Internet of Things",
+    "courseDescription": "An introductory course to programming concepts.",
+    "courseCode": "DS205",
+    "credits": 48,
+    "department": "Department of Specialization 5, Department of Specialization 16",
+    "instructor": "Instructor 23"
+  },
+  {
+    "courseName": "Operating Systems",
+    "courseDescription": "An introductory course to programming concepts.",
+    "courseCode": "DS205",
+    "credits": 36,
+    "department": "Department of Specialization 16",
+    "instructor": "Instructor 30"
+  },
+  {
+    "courseName": "Introduction to Programming",
+    "courseDescription": "An introductory course to programming concepts.",
+    "courseCode": "CS110",
+    "credits": 11,
+    "department": "Department of Specialization 3, Department of Specialization 7, Department of Specialization 19",
+    "instructor": "Instructor 31"
+  },
+  {
+    "courseName": "Cloud Computing",
+    "courseDescription": "An introductory course to programming concepts.",
+    "courseCode": "DS208",
+    "credits": 54,
+    "department": "Department of Specialization 11, Department of Specialization 8, Department of Specialization 1",
+    "instructor": "Instructor 8"
+  },
+  {
+    "courseName": "Cybersecurity",
+    "courseDescription": "An introductory course to programming concepts.",
+    "courseCode": "DS206",
+    "credits": 54,
+    "department": "Department of Specialization 1, Department of Specialization 18",
+    "instructor": "Instructor 13"
+  },
+  {
+    "courseName": "Computer Networks",
+    "courseDescription": "An introductory course to programming concepts.",
+    "courseCode": "CS103",
+    "credits": 51,
+    "department": "Department of Specialization 20, Department of Specialization 3",
+    "instructor": "Instructor 2"
+  },
+  {
+    "courseName": "Data Structures",
+    "courseDescription": "An introductory course to programming concepts.",
+    "courseCode": "CS101",
+    "credits": 38,
+    "department": "Department of Specialization 10, Department of Specialization 13, Department of Specialization 7",
+    "instructor": "Instructor 18"
+  },
+  {
+    "courseName": "Artificial Intelligence",
+    "courseDescription": "An introductory course to programming concepts.",
+    "courseCode": "CS105",
+    "credits": 3,
+    "department": "Department of Specialization 7, Department of Specialization 2, Department of Specialization 5",
+    "instructor": "Instructor 18"
+  },
+  {
+    "courseName": "Blockchain Technology",
+    "courseDescription": "An introductory course to programming concepts.",
+    "courseCode": "DS217",
+    "credits": 36,
+    "department": "Department of Specialization 4, Department of Specialization 5",
+    "instructor": "Instructor 3"
+  },
+  {
+    "courseName": "Quantum Computing",
+    "courseDescription": "An introductory course to programming concepts.",
+    "courseCode": "CS108",
+    "credits": 17,
+    "department": "Department of Specialization 12, Department of Specialization 16, Department of Specialization 13",
+    "instructor": "Instructor 40"
+  },
+  {
+    "courseName": "Algorithms",
+    "courseDescription": "An introductory course to programming concepts.",
+    "courseCode": "DS214",
+    "credits": 2,
+    "department": "Department of Specialization 19",
+    "instructor": "Instructor 35"
+  },
+  {
+    "courseName": "Quantum Computing",
+    "courseDescription": "An introductory course to programming concepts.",
+    "courseCode": "DS210",
+    "credits": 31,
+    "department": "Department of Specialization 8, Department of Specialization 14, Department of Specialization 20",
+    "instructor": "Instructor 19"
+  }
+]

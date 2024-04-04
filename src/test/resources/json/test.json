@@ -1,0 +1,26 @@
+[
+  {
+    "courseName": "Introduction to Programming",
+    "courseCode": "CS101",
+    "courseDescription": "An introductory course to programming concepts.",
+    "credits": 56,
+    "departmen": "Department of Robotics, Department of Electronics, Department of Engineering",
+    "instructor": "John Doe4"
+  },
+  {
+    "courseName": "Introduction to Programming",
+    "courseCode": "CS102",
+    "courseDescription": "An introductory course to programming concepts.",
+    "credits": 34,
+    "department": "Department of Computer Science, Department of Electronics",
+    "instructor": "John Doe5"
+  },
+  {
+    "courseName": "Introduction to Programming",
+    "courseCode": "CS103",
+    "courseDescription": "An introductory course to programming concepts.",
+    "credits": 3,
+    "department": "Department of Computer Science, Department of Electronics",
+    "instructor": "John Doe5"
+  }
+]

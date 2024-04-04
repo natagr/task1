@@ -1,0 +1,82 @@
+[
+  {
+    "courseName": "Advanced Programming",
+    "courseDescription": "An introductory course to programming concepts.",
+    "courseCode": "DS217",
+    "credits": 18,
+    "department": "Department of Specialization 2, Department of Specialization 16",
+    "instructor": "Instructor 24"
+  },
+  {
+    "courseName": "Data Science",
+    "courseDescription": "An introductory course to programming concepts.",
+    "courseCode": "DS216",
+    "credits": 59,
+    "department": "Department of Specialization 7, Department of Specialization 13",
+    "instructor": "Instructor 39"
+  },
+  {
+    "courseName": "Algorithms",
+    "courseDescription": "An introductory course to programming concepts.",
+    "courseCode": "DS203",
+    "credits": 31,
+    "department": "Department of Specialization 3, Department of Specialization 5",
+    "instructor": "Instructor 7"
+  },
+  {
+    "courseName": "Cloud Computing",
+    "courseDescription": "An introductory course to programming concepts.",
+    "courseCode": "CS111",
+    "credits": 57,
+    "department": "Department of Specialization 8, Department of Specialization 9, Department of Specialization 18",
+    "instructor": "Instructor 6"
+  },
+  {
+    "courseName": "Machine Learning",
+    "courseDescription": "An introductory course to programming concepts.",
+    "courseCode": "CS104",
+    "credits": 6,
+    "department": "Department of Specialization 2, Department of Specialization 10, Department of Specialization 19",
+    "instructor": "Instructor 32"
+  },
+  {
+    "courseName": "Blockchain Technology",
+    "courseDescription": "An introductory course to programming concepts.",
+    "courseCode": "DS213",
+    "credits": 19,
+    "department": "Department of Specialization 14, Department of Specialization 8",
+    "instructor": "Instructor 4"
+  },
+  {
+    "courseName": "Introduction to Programming",
+    "courseDescription": "An introductory course to programming concepts.",
+    "courseCode": "CS108",
+    "credits": 16,
+    "department": "Department of Specialization 1, Department of Specialization 14, Department of Specialization 4",
+    "instructor": "Instructor 40"
+  },
+  {
+    "courseName": "Database Systems",
+    "courseDescription": "An introductory course to programming concepts.",
+    "courseCode": "CS109",
+    "credits": 1,
+    "department": "Department of Specialization 4, Department of Specialization 20, Department of Specialization 1",
+    "instructor": "Instructor 35"
+  },
+  {
+    "courseName": "Software Engineering",
+    "courseDescription": "An introductory course to programming concepts.",
+    "courseCode": "DS207",
+    "credits": 51,
+    "department": "Department of Specialization 2, Department of Specialization 10, Department of Specialization 9",
+    "instructor": "Instructor 9"
+  },
+  {
+    "courseName": "Cloud Computing",
+    "courseDescription": "An introductory course to programming concepts.",
+    "courseCode": "DS204",
+    "credits": 22,
+    "department": "Department of Specialization 16",
+    "instructor": "Instructor 2"
+  }
+]

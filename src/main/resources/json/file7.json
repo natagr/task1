@@ -1,0 +1,162 @@
+[
+  {
+    "courseName": "Game Development",
+    "courseDescription": "An introductory course to programming concepts.",
+    "courseCode": "DS212",
+    "credits": 30,
+    "department": "Department of Specialization 12, Department of Specialization 13",
+    "instructor": "Instructor 24"
+  },
+  {
+    "courseName": "Computer Networks",
+    "courseDescription": "An introductory course to programming concepts.",
+    "courseCode": "CS114",
+    "credits": 10,
+    "department": "Department of Specialization 19, Department of Specialization 20",
+    "instructor": "Instructor 21"
+  },
+  {
+    "courseName": "Algorithms",
+    "courseDescription": "An introductory course to programming concepts.",
+    "courseCode": "CS103",
+    "credits": 21,
+    "department": "Department of Specialization 11, Department of Specialization 19, Department of Specialization 12",
+    "instructor": "Instructor 31"
+  },
+  {
+    "courseName": "Cybersecurity",
+    "courseDescription": "An introductory course to programming concepts.",
+    "courseCode": "DS219",
+    "credits": 34,
+    "department": "Department of Specialization 19",
+    "instructor": "Instructor 1"
+  },
+  {
+    "courseName": "Blockchain Technology",
+    "courseDescription": "An introductory course to programming concepts.",
+    "courseCode": "DS206",
+    "credits": 43,
+    "department": "Department of Specialization 1, Department of Specialization 18",
+    "instructor": "Instructor 39"
+  },
+  {
+    "courseName": "Cloud Computing",
+    "courseDescription": "An introductory course to programming concepts.",
+    "courseCode": "CS102",
+    "credits": 2,
+    "department": "Department of Specialization 19",
+    "instructor": "Instructor 9"
+  },
+  {
+    "courseName": "Internet of Things",
+    "courseDescription": "An introductory course to programming concepts.",
+    "courseCode": "DS211",
+    "credits": 34,
+    "department": "Department of Specialization 3, Department of Specialization 5, Department of Specialization 12",
+    "instructor": "Instructor 15"
+  },
+  {
+    "courseName": "Quantum Computing",
+    "courseDescription": "An introductory course to programming concepts.",
+    "courseCode": "CS113",
+    "credits": 10,
+    "department": "Department of Specialization 19",
+    "instructor": "Instructor 27"
+  },
+  {
+    "courseName": "Artificial Intelligence",
+    "courseDescription": "An introductory course to programming concepts.",
+    "courseCode": "CS103",
+    "credits": 27,
+    "department": "Department of Specialization 8, Department of Specialization 16, Department of Specialization 10",
+    "instructor": "Instructor 26"
+  },
+  {
+    "courseName": "Mobile App Development",
+    "courseDescription": "An introductory course to programming concepts.",
+    "courseCode": "CS118",
+    "credits": 1,
+    "department": "Department of Specialization 6, Department of Specialization 11, Department of Specialization 2",
+    "instructor": "Instructor 8"
+  },
+  {
+    "courseName": "Algorithms",
+    "courseDescription": "An introductory course to programming concepts.",
+    "courseCode": "DS207",
+    "credits": 43,
+    "department": "Department of Specialization 16",
+    "instructor": "Instructor 31"
+  },
+  {
+    "courseName": "Human-Computer Interaction",
+    "courseDescription": "An introductory course to programming concepts.",
+    "courseCode": "DS213",
+    "credits": 1,
+    "department": "Department of Specialization 5, Department of Specialization 9, Department of Specialization 13",
+    "instructor": "Instructor 26"
+  },
+  {
+    "courseName": "Data Science",
+    "courseDescription": "An introductory course to programming concepts.",
+    "courseCode": "DS209",
+    "credits": 41,
+    "department": "Department of Specialization 14, Department of Specialization 1",
+    "instructor": "Instructor 12"
+  },
+  {
+    "courseName": "Operating Systems",
+    "courseDescription": "An introductory course to programming concepts.",
+    "courseCode": "DS214",
+    "credits": 4,
+    "department": "Department of Specialization 11, Department of Specialization 1",
+    "instructor": "Instructor 6"
+  },
+  {
+    "courseName": "Introduction to Programming",
+    "courseDescription": "An introductory course to programming concepts.",
+    "courseCode": "DS210",
+    "credits": 30,
+    "department": "Department of Specialization 20, Department of Specialization 2",
+    "instructor": "Instructor 35"
+  },
+  {
+    "courseName": "Data Science",
+    "courseDescription": "An introductory course to programming concepts.",
+    "courseCode": "DS206",
+    "credits": 4,
+    "department": "Department of Specialization 10, Department of Specialization 8",
+    "instructor": "Instructor 22"
+  },
+  {
+    "courseName": "Human-Computer Interaction",
+    "courseDescription": "An introductory course to programming concepts.",
+    "courseCode": "CS110",
+    "credits": 21,
+    "department": "Department of Specialization 4, Department of Specialization 17",
+    "instructor": "Instructor 9"
+  },
+  {
+    "courseName": "Database Systems",
+    "courseDescription": "An introductory course to programming concepts.",
+    "courseCode": "DS216",
+    "credits": 21,
+    "department": "Department of Specialization 14",
+    "instructor": "Instructor 32"
+  },
+  {
+    "courseName": "Data Structures",
+    "courseDescription": "An introductory course to programming concepts.",
+    "courseCode": "DS201",
+    "credits": 30,
+    "department": "Department of Specialization 15, Department of Specialization 18, Department of Specialization 16",
+    "instructor": "Instructor 40"
+  },
+  {
+    "courseName": "Cybersecurity",
+    "courseDescription": "An introductory course to programming concepts.",
+    "courseCode": "DS207",
+    "credits": 21,
+    "department": "Department of Specialization 7, Department of Specialization 15, Department of Specialization 1",
+    "instructor": "Instructor 38"
+  }
+]
