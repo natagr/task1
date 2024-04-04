@@ -76,7 +76,8 @@ This document provides an overview of the Course Management System, detailing it
     "department": "Department of Computer Science, Department of Electronics",
     "instructor": "John Doe5"
   }
-]```
+]
+```
 
 Output file:
 <statistics>
