@@ -124,17 +124,17 @@ Threads: 8 Time: 2 ms
 
 # 16 files:
 
-Threads: 1 Time: 129 ms
+-Threads: 1 Time: 129 ms
 Threads: 2 Time: 6 ms
 Threads: 4 Time: 3 ms
 Threads: 8 Time: 4 ms
 
-Threads: 1 Time: 89 ms
+-Threads: 1 Time: 89 ms
 Threads: 2 Time: 5 ms
 Threads: 4 Time: 4 ms
 Threads: 8 Time: 4 ms
 
-Threads: 1 Time: 68 ms
+-Threads: 1 Time: 68 ms
 Threads: 2 Time: 5 ms
 Threads: 4 Time: 3 ms
 Threads: 8 Time: 4 ms
