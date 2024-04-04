@@ -4,7 +4,7 @@
 (main - Course, secondary - Instructor)
 Each course has one instructor, but one instructor can teach several different courses.
 
-## Components
+## Components:
 
 ### UserInterface
 
@@ -106,40 +106,17 @@ Each course has one instructor, but one instructor can teach several different c
 
 ## Results of experiments with the number of threads:
 
-# 4 files:
-
-Threads: 1 Time: 65 ms
-Threads: 2 Time: 3 ms
-Threads: 4 Time: 2 ms
-Threads: 8 Time: 2 ms
-
-Threads: 1 Time: 62 ms
-Threads: 2 Time: 2 ms
-Threads: 4 Time: 1 ms
-Threads: 8 Time: 1 ms
-
-Threads: 1 Time: 64 ms
-Threads: 2 Time: 3 ms
-Threads: 4 Time: 1 ms
-Threads: 8 Time: 2 ms
-
-
-# 16 files:
-
-Threads: 1 Time: 129 ms
-Threads: 2 Time: 6 ms
-Threads: 4 Time: 3 ms
-Threads: 8 Time: 4 ms
-
-Threads: 1 Time: 89 ms
-Threads: 2 Time: 5 ms
-Threads: 4 Time: 4 ms
-Threads: 8 Time: 4 ms
-
--Threads: 1 Time: 68 ms
-Threads: 2 Time: 5 ms
-Threads: 4 Time: 3 ms
-Threads: 8 Time: 4 ms
+| Number of Files | Threads | Measurement 1 (time, ms) | Measurement 2 (time, ms) | Measurement 3 (time, ms) |
+|-----------------|---------|--------------------------|--------------------------|--------------------------|
+| 4               | 1       | 65                       | 62                       | 64                       |
+| 4               | 2       | 3                        | 2                        | 3                        |
+| 4               | 4       | 2                        | 1                        | 1                        |
+| 4               | 8       | 2                        | 1                        | 2                        |
+|-----------------|---------|--------------------------|--------------------------|--------------------------|
+| 16              | 1       | 129                      | 89                       | 68                       |
+| 16              | 2       | 6                        | 5                        | 5                        |
+| 16              | 4       | 3                        | 4                        | 3                        |
+| 16              | 8       | 4                        | 4                        | 4                        |
 
 
 ## Summary:
