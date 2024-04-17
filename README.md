@@ -1,23 +1,55 @@
-# Subject area:
+## Project Launch:
 
-## Course - Instructor  
-(main - Course, secondary - Instructor)
+This project can be run through the Integrated Development Environment (IDE) IntelliJ IDEA. For a correct launch of the program, certain parameters must be passed to it (`Run -> Edit Configurations -> Application -> App -> Program arguments`).
+
+### Required Launch Parameters
+
+When launching the program through IntelliJ IDEA, the following launch parameters must be specified:
+
+- **pathToFiles**: The absolute path to the folder containing JSON files.
+- **attributeName**: The name of the attribute in the JSON file by which the statistics will be formed.
+
+The project already includes a folder with sample JSON files. The path to this folder is: `src/main/resources/json`.
+
+### Possible attributes for generating statistics include:
+
+- `department`
+- `credits`
+- `instructor`
+
+### Example of correctly entered parameters for launch:
+
+src/main/resources/json department
+
+
+## Subject area:
+
+**Course - Instructor** (main - Course, secondary - Instructor)
+
 Each course has one instructor, but one instructor can teach several different courses.
+
+## Description of the main entities:
+
+**Course:** 
+
+- **courseName**:  Name of the course.
+- **courseCode**: Unique code identifying the course.
+- **courseDescription**: Brief overview of what the course entails.
+- **credits**: Number of credit points the course carries.
+- **department**: Departments under which the course is offered.
+- **instructor**: Name of the instructor teaching the course.
+
+**Instructor:** 
+
+- **instructorID**: Unique identifier for the instructor.
+- **name**: Full name of the instructor.
+- **email**: Email address of the instructor.
+- **officeLocation**: Physical location of the instructor's office.
+- **officeHours**: Scheduled times when the instructor is available to meet with students.
+- **departments**: Departments to which the instructor is affiliated.
 
 
 ## Components:
-
-### UserInterface
-
-- **Purpose**: Interacts with the user to select a specific attribute for statistical analysis.
-- **Key Methods**:
-  - `getAttributeFromUser()`: Prompts the user to select an attribute and returns the selected attribute's name.
-
-### StatisticsCalculator
-
-- **Purpose**: Provides utilities for computing and updating statistics based on arrays of string values, ensuring thread-safe operations suitable for concurrent environments.
-- **Key Methods**:
-  - `calculateStatistics(String[] values, Map<String, AtomicInteger> statistics)`: Analyzes an array of string values and counts occurrences of each unique value, updating the provided statistics map with these counts.
 
 ### FileParser
 
@@ -27,6 +59,12 @@ Each course has one instructor, but one instructor can teach several different c
   - `processFile & parseJson`: Extract and count attribute values from each file.
   - `shutdownAndAwaitTermination`: Ensures all threads are properly terminated.
   - `printStatistics`: Displays the count of processed and ignored records.
+
+### StatisticsCalculator
+
+- **Purpose**: Provides utilities for computing and updating statistics based on arrays of string values, ensuring thread-safe operations suitable for concurrent environments.
+- **Key Methods**:
+  - `calculateStatistics(String[] values, Map<String, AtomicInteger> statistics)`: Analyzes an array of string values and counts occurrences of each unique value, updating the provided statistics map with these counts.
 
 ### XMLGenerator
 
@@ -40,11 +78,20 @@ Each course has one instructor, but one instructor can teach several different c
 - **Key Methods**:
   - `measurePerformance(String folderPath, String attribute, int[] threads)`: Measures execution time with varying thread counts and prints metrics.
 
+### ParameterValidator
+
+- **Purpose**: Provides validation for application input parameters to ensure they meet specific criteria before the application processes them. 
+- **Key Methods:**
+  - `validateArgsLength(String[] args)`: Checks if the arguments array contains at least two elements to proceed with further processing. Returns `true` if valid, otherwise prints an error message and returns `false`.
+  - `validateFolderPath(String folderPath)`: Validates that the given folder path exists and is a directory. Returns `true` if valid, otherwise prints an error message and returns `false`.
+  - `validateAttribute(String attribute)`: Checks if the provided attribute is among the allowed attributes (`department`, `credits`, `instructor`). Returns `true` if valid, otherwise prints an error message and returns `false`.
+  - `validateParameters(String[] args)`: Combines validation of the arguments length, folder path, and attribute in one method to streamline the validation process before the application performs any operations. Returns `true` if all validations are passed.
+
 ### App
 
-- **Purpose**: Entry point of the application, orchestrating operations from user input through performance measurement to XML report generation.
+- **Purpose**: Serves as the entry point of the application, orchestrating the flow of operations from files parsing through performance measurement and XML report generation.
 - **Key Actions**:
-  - Prompts for attribute selection.
+  - Receives command line arguments.
   - Benchmarks parsing performance.
   - Parses files, converts statistics for reporting.
   - Generates XML report.
@@ -115,11 +162,10 @@ Each course has one instructor, but one instructor can teach several different c
 | 4               | 2       | 3                        | 2                        | 3                        |
 | 4               | 4       | 2                        | 1                        | 1                        |
 | 4               | 8       | 2                        | 1                        | 2                        |
-|-----------------|---------|--------------------------|--------------------------|--------------------------|
 | 16              | 1       | 129                      | 89                       | 68                       |
-| 16              | 2       | 6                        | 5                        | 5                        |
-| 16              | 4       | 3                        | 4                        | 3                        |
-| 16              | 8       | 4                        | 4                        | 4                        |
+| 16              | 2       | 7                        | 6                        | 5                        |
+| 16              | 4       | 4                        | 3                        | 4                        |
+| 16              | 8       | 5                        | 4                        | 4                        |
 
 
 ## Summary:
