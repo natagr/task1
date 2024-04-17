@@ -1,4 +1,4 @@
-## Project Launch
+## Project Launch:
 
 This project can be run through the Integrated Development Environment (IDE) IntelliJ IDEA. For a correct launch of the program, certain parameters must be passed to it (`Run -> Edit Configurations -> Application -> App -> Program arguments`).
 
