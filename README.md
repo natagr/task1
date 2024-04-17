@@ -1,6 +1,6 @@
 ## Project Launch:
 
-This project can be run through the Integrated Development Environment (IDE) IntelliJ IDEA. For a correct launch of the program, certain parameters must be passed to it (`Run -> Edit Configurations -> Application -> App -> Program arguments`).
+This project can be run through the Integrated Development Environment (IDE) IntelliJ IDEA (`Run -> Edit Configurations -> Application -> App -> Program arguments`).
 
 ### Required Launch Parameters
 
@@ -59,33 +59,34 @@ Each course has one instructor, but one instructor can teach several different c
   - `processFile & parseJson`: Extract and count attribute values from each file.
   - `shutdownAndAwaitTermination`: Ensures all threads are properly terminated.
   - `printStatistics`: Displays the count of processed and ignored records.
+  - `convertToRegularMap`: Converts a map with AtomicInteger values to a map with Integer values.
 
 ### StatisticsCalculator
 
 - **Purpose**: Provides utilities for computing and updating statistics based on arrays of string values, ensuring thread-safe operations suitable for concurrent environments.
 - **Key Methods**:
-  - `calculateStatistics(String[] values, Map<String, AtomicInteger> statistics)`: Analyzes an array of string values and counts occurrences of each unique value, updating the provided statistics map with these counts.
+  - `calculateStatistics`: Analyzes an array of string values and counts occurrences of each unique value, updating the provided statistics map with these counts.
 
 ### XMLGenerator
 
 - **Purpose**: Generates an XML file summarizing the collected statistics.
 - **Key Methods**:
-  - `generateXML(Map<String, Integer> statistics, String attribute)`: Generates an XML file detailing the frequency of each attribute value.
+  - `generateXML`: Generates an XML file detailing the frequency of each attribute value.
 
 ### PerformanceMeasurer
 
 - **Purpose**: Measures and compares the performance of the FileParser operation with different numbers of threads.
 - **Key Methods**:
-  - `measurePerformance(String folderPath, String attribute, int[] threads)`: Measures execution time with varying thread counts and prints metrics.
+  - `measurePerformance`: Measures execution time with varying thread counts and prints metrics.
 
 ### ParameterValidator
 
 - **Purpose**: Provides validation for application input parameters to ensure they meet specific criteria before the application processes them. 
 - **Key Methods:**
-  - `validateArgsLength(String[] args)`: Checks if the arguments array contains at least two elements to proceed with further processing. Returns `true` if valid, otherwise prints an error message and returns `false`.
-  - `validateFolderPath(String folderPath)`: Validates that the given folder path exists and is a directory. Returns `true` if valid, otherwise prints an error message and returns `false`.
-  - `validateAttribute(String attribute)`: Checks if the provided attribute is among the allowed attributes (`department`, `credits`, `instructor`). Returns `true` if valid, otherwise prints an error message and returns `false`.
-  - `validateParameters(String[] args)`: Combines validation of the arguments length, folder path, and attribute in one method to streamline the validation process before the application performs any operations. Returns `true` if all validations are passed.
+  - `validateArgsLength`: Checks if the arguments array contains at least two elements to proceed with further processing.
+  - `validateFolderPath`: Validates that the given folder path exists and is a directory.
+  - `validateAttribute`: Checks if the provided attribute is among the allowed attributes (`department`, `credits`, `instructor`).
+  - `validateParameters`: Combines validation of the arguments length, folder path, and attribute in one method to streamline the validation process before the application performs any operations.
 
 ### App
 
@@ -93,7 +94,7 @@ Each course has one instructor, but one instructor can teach several different c
 - **Key Actions**:
   - Receives command line arguments.
   - Benchmarks parsing performance.
-  - Parses files, converts statistics for reporting.
+  - Parses files.
   - Generates XML report.
 
 
