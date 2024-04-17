@@ -9,6 +9,7 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ExecutorService;
@@ -34,7 +35,7 @@ public class FileParser {
      * @param threads The number of threads to use for asynchronous processing.
      * @return A Map with attribute values as keys and their occurrence counts as values.
      */
-    public static Map<String, AtomicInteger> parseDirectory(Path directoryPath, String attribute, Integer threads) throws IOException {
+    public static Map<String, Integer> parseDirectory(Path directoryPath, String attribute, Integer threads) throws IOException {
         ExecutorService executorService = Executors.newFixedThreadPool(threads);
         Map<String, AtomicInteger> statistics = new ConcurrentHashMap<>();
         AtomicInteger processedRecords = new AtomicInteger(0);
@@ -49,7 +50,7 @@ public class FileParser {
         }
 
         printStatistics(processedRecords, ignoredRecords);
-        return statistics;
+        return convertToRegularMap(statistics);
     }
 
     /**
@@ -125,5 +126,19 @@ public class FileParser {
     private static void printStatistics(AtomicInteger processedRecords, AtomicInteger ignoredRecords) {
         System.out.println("ProcessedRecords: " + processedRecords.get());
         System.out.println("IgnoredRecords: " + ignoredRecords.get());
+    }
+
+    /**
+     * Converts a map with AtomicInteger values to a map with Integer values.
+     *
+     * @param atomicMap The source map with String keys and AtomicInteger values.
+     * @return A new Map with String keys and Integer values, where each value
+     *         is the integer value of the corresponding AtomicInteger from the
+     *         source map.
+     */
+    private static Map<String, Integer> convertToRegularMap(Map<String, AtomicInteger> atomicMap) {
+        Map<String, Integer> regularMap = new HashMap<>();
+        atomicMap.forEach((key, atomicValue) -> regularMap.put(key, atomicValue.get()));
+        return regularMap;
     }
 }

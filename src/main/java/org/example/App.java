@@ -3,11 +3,9 @@ package org.example;
 import java.io.IOException;
 import java.nio.file.Paths;
 import java.util.Map;
-import java.util.concurrent.atomic.AtomicInteger;
 
 import static org.example.filehandling.FileParser.parseDirectory;
 import static org.example.filehandling.XMLGenerator.generateXML;
-import static org.example.util.MapConvertor.convertToRegularMap;
 import static org.example.util.ParameterValidator.validateParameters;
 import static org.example.util.PerformanceMeasurer.measurePerformance;
 
@@ -31,11 +29,8 @@ public class App  {
         try {
             System.out.println("\nThe number of processed and ignored records:\n");
             int coreCount = Runtime.getRuntime().availableProcessors();
-            Map<String, AtomicInteger> statistics = parseDirectory(Paths.get(folderPath), attribute, coreCount);
-
-            Map<String, Integer> regularIntegerMap = convertToRegularMap(statistics);
-
-            generateXML(regularIntegerMap, attribute);
+            Map<String, Integer> statistics = parseDirectory(Paths.get(folderPath), attribute, coreCount);
+            generateXML(statistics, attribute);
         } catch (Exception e) {
             e.printStackTrace();
         }

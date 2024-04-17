@@ -53,13 +53,13 @@ public class FileParserTest {
     public void testProcessedRecords() throws IOException {
         Path tempDir = createTestDirectoryWithFile();
 
-        Map<String, AtomicInteger> result = parseDirectory(tempDir, "department", 2);
+        Map<String, Integer> result = parseDirectory(tempDir, "department", 2);
 
-        AtomicInteger csDeptCount = result.get("Department of Computer Science");
-        AtomicInteger electronicsDeptCount = result.get("Department of Electronics");
+        Integer csDeptCount = result.get("Department of Computer Science");
+        Integer electronicsDeptCount = result.get("Department of Electronics");
 
-        assertEquals(2, csDeptCount == null ? 0 : csDeptCount.get());
-        assertEquals(2, electronicsDeptCount == null ? 0 : electronicsDeptCount.get());
+        assertEquals(2, csDeptCount == null ? 0 : csDeptCount);
+        assertEquals(2, electronicsDeptCount == null ? 0 : electronicsDeptCount);
 
         cleanUpTestDirectory(tempDir);
     }
