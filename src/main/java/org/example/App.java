@@ -7,23 +7,23 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 import static org.example.filehandling.FileParser.parseDirectory;
 import static org.example.filehandling.XMLGenerator.generateXML;
-import static org.example.ui.UserInterface.getAttributeFromUser;
 import static org.example.util.MapConvertor.convertToRegularMap;
+import static org.example.util.ParameterValidator.validateParameters;
 import static org.example.util.PerformanceMeasurer.measurePerformance;
 
 public class App  {
-    private static final String FOLDER_PATH = "src/main/resources/json";
     private static final int[] threads = {1, 2, 4, 8};
     public static void main(String[] args){
-        String attribute = getAttributeFromUser();
-        if (attribute.isEmpty()) {
-            System.out.println("Wrong choice. End of the program.");
+        if (!validateParameters(args)) {
             return;
         }
 
+        String folderPath = args[0];
+        String attribute = args[1];
+
         try {
             System.out.println("\nPerformance comparison:\n");
-            measurePerformance(FOLDER_PATH, attribute, threads);
+            measurePerformance(folderPath, attribute, threads);
         } catch (IOException | InterruptedException e) {
             throw new RuntimeException(e);
         }
@@ -31,7 +31,7 @@ public class App  {
         try {
             System.out.println("\nThe number of processed and ignored records:\n");
             int coreCount = Runtime.getRuntime().availableProcessors();
-            Map<String, AtomicInteger> statistics = parseDirectory(Paths.get(FOLDER_PATH), attribute, coreCount);
+            Map<String, AtomicInteger> statistics = parseDirectory(Paths.get(folderPath), attribute, coreCount);
 
             Map<String, Integer> regularIntegerMap = convertToRegularMap(statistics);
 

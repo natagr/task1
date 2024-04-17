@@ -27,7 +27,6 @@ public class PerformanceMeasurer {
             long duration = (endTime - startTime) / 1_000_000;
 
             System.out.println("Threads: " + threadCount + " Time: " + duration + " ms\n");
-
         }
     }
 }
