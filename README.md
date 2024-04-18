@@ -44,8 +44,6 @@ Each course has one instructor, but one instructor can teach several different c
 - **instructorID**: Unique identifier for the instructor.
 - **name**: Full name of the instructor.
 - **email**: Email address of the instructor.
-- **officeLocation**: Physical location of the instructor's office.
-- **officeHours**: Scheduled times when the instructor is available to meet with students.
 - **departments**: Departments to which the instructor is affiliated.
 
 
